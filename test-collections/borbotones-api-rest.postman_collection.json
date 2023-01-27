@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "c6d59953-bd9e-42a0-8c33-06a38c10f1ea",
+		"name": "borbotones-api-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3080/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3080/api/product/PRD1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"product",
+						"PRD1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"code\": \"PRD2\",\n    \"name\": \"Other\", \n    \"price\": 23, \n    \"quantity\": 70\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3080/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
